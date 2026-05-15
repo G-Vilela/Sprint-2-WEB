@@ -79,3 +79,27 @@ document.getElementById("btnPrompt").addEventListener("click", function(){
     }
 
 });
+const btnEnviar = document.getElementById("btnEnviar");
+const resultado = document.getElementById("resultado");
+
+btnEnviar.addEventListener("click", function(){
+
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+
+    if(nome === "" || email === ""){
+        resultado.innerHTML = "Preencha todos os campos";
+        resultado.style.color = "red";
+        return;
+    }
+
+    if(!email.includes("@")){
+        resultado.innerHTML = "Digite um e-mail válido";
+        resultado.style.color = "red";
+        return;
+    }
+
+    resultado.innerHTML = "Formulário enviado com sucesso";
+    resultado.style.color = "green";
+
+});
