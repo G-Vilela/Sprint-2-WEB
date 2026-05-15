@@ -17,7 +17,6 @@ btnLogin.addEventListener("click", function(){
         mensagem.innerHTML = "Login realizado com sucesso";
         mensagem.style.color = "green";
 
-        // troca de tela
         document.getElementById("telaLogin").classList.remove("active");
         document.getElementById("telaSistema").classList.add("active");
 
