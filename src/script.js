@@ -61,3 +61,21 @@ document.getElementById("anterior").addEventListener("click", function(){
     slide.src = imagens[indice];
 
 });
+const caixa = document.getElementById("caixa");
+
+
+document.getElementById("btnAlerta").addEventListener("click", function(){
+
+    alert("Usamos JavaScript para fazer esse trabalho!");
+
+});
+
+document.getElementById("btnPrompt").addEventListener("click", function(){
+
+    let nome = prompt("Digite seu nome:");
+
+    if(nome){
+        caixa.innerHTML = "Olá, tenha um ótimo dia " + nome ;
+    }
+
+});
